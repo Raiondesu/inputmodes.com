@@ -60,10 +60,16 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('main').innerHTML = `
-        <textarea></textarea>
-        <textarea></textarea>
-      `;
+      new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 2000);
+      }).then(() => {
+        document.getElementById('main').innerHTML = `
+          <textarea></textarea>
+          <textarea></textarea>
+        `;
+      });
     });
   </script>
 </body>
