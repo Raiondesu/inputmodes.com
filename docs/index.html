@@ -59,8 +59,8 @@
   </footer>
 
   <script>
-    document.onload = () => {
-      window.main.innerHtml = `
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('main').innerHtml = `
         <div>
           <form class="container">
             <br><code>inputmode=text</code> <small><em>(default)</em></small>
@@ -76,7 +76,7 @@
           </form>
         </div>
       `;
-    };
+    });
   </script>
 </body>
 
